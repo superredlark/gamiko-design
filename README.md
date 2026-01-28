@@ -64,7 +64,7 @@ We provide a transparent participation process to ensure every contribution is a
 
 ## 📄 License
 
-The framework of this project is open for review. However, please note that all creative assets (stories, art, and branding) are protected. See the [LICENSE](LICENSE) file for more details.
+The project framework is open for review. However, all creative assets (story scripts, art, and branding) are governed by a specific license to protect the contributors' rights. Please refer to the [LICENSE](LICENSE) file for ownership details and revenue-sharing terms.
 
 ---
 
