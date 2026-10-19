@@ -39,7 +39,7 @@ The PDF opens in any reader as a normal page, and carries the whole story as an 
 
 ## License
 
-Code under `tools/` is MIT. Documentation under `docs/` is CC BY 4.0. Works shared here stay with their authors. Details are in [LICENSE](LICENSE).
+Code under `tools/` is MIT. Documentation under `docs/` is CC BY 4.0. Works stay with their authors and are CC BY 4.0 unless the author says otherwise. Details are in [LICENSE](LICENSE).
 
 ---
 
@@ -78,4 +78,4 @@ python3 tools/gmkvn.py unpack  lighthouse.pdf lighthouse_out
 
 ## 许可
 
-`tools/` 下的代码采用 MIT 许可，`docs/` 下的文档采用 CC BY 4.0，在这里分享的作品归作者本人所有。详见 [LICENSE](LICENSE)。
+`tools/` 下的代码采用 MIT 许可，`docs/` 下的文档采用 CC BY 4.0，作品归作者本人所有，作者没有另行声明时采用 CC BY 4.0。详见 [LICENSE](LICENSE)。

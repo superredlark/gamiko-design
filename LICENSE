@@ -38,12 +38,14 @@ give appropriate credit and indicate if changes were made.
    everything under examples/ and anything shared through this repository)
 --------------------------------------------------------------------
 
-Each work belongs to its author. Publishing a work here does not by itself
-grant anyone any right to use it, beyond viewing it here and discussing it.
-If an author wants to allow more, they state their own license next to the
-work (for example in a README in the same folder, or in the post where the
-work is shared).
+Each work belongs to its author. Unless the author states a different
+license next to the work (for example in a README.md in the work's folder),
+works in this repository are licensed under the Creative Commons Attribution
+4.0 International License (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
 
-The example story under examples/lighthouse/ may be used to try out, test
-and demonstrate the tools in this repository. Its pictures were generated
+That means anyone may play, share and adapt them, including commercially,
+as long as they credit the author and indicate if changes were made.
+
+The pictures of the example story under examples/lighthouse/ were generated
 with an AI tool and carry that tool's visible label.

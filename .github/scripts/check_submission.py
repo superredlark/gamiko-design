@@ -139,9 +139,6 @@ def main():
             if total > MAX_WORK:
                 errors.append(f"`{work}/`: {total / 1048576:.1f} MB in total, at most {MAX_WORK // 1048576} MB per work.")
             files = os.listdir(folder) if os.path.isdir(folder) else []
-            readme = os.path.join(folder, "README.md")
-            if not os.path.isfile(readme) or not open(readme, encoding="utf-8").read().strip():
-                errors.append(f"`{work}/README.md` is missing or empty. Say what the work is and what others may do with it.")
             stories = sorted(f for f in files if f.endswith(".json"))
             if not stories:
                 errors.append(f"`{work}/`: no story file (`*.json`) found.")
