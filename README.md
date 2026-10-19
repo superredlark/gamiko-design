@@ -16,6 +16,7 @@ This repository is a place to share **technical material about visual novels** f
 | [`docs/pdf-container.md`](docs/pdf-container.md) | How a whole story, script plus pictures, is packed into one ordinary PDF, and the open binary format used for it |
 | [`tools/gmkvn.py`](tools/gmkvn.py) | Open-edition packer: story → PDF, PDF → story, and a one-file HTML preview. Python standard library only |
 | [`examples/lighthouse/`](examples/lighthouse/) | *The Lighthouse in the Storm*: a complete 10-scene story with two endings, in English and Chinese |
+| [`works/`](works/) | Stories shared by the community |
 
 ## Try it
 
@@ -31,7 +32,7 @@ The PDF opens in any reader as a normal page, and carries the whole story as an 
 
 ## Sharing works and joining the discussion
 
-- **Works:** post your stories, scripts and artwork in [Discussions](https://github.com/superredlark/gamiko-design/discussions). Say clearly what others may do with them; see [LICENSE](LICENSE).
+- **Works:** open a pull request that adds your story under `works/<your GitHub user name>/`. It is checked and **merged automatically**; see the [submission guide](works/README.md). You can also just post stories, scripts and artwork in [Discussions](https://github.com/superredlark/gamiko-design/discussions).
 - **Questions and ideas** about the format or the tools: [Discussions](https://github.com/superredlark/gamiko-design/discussions).
 - **Mistakes** in the docs or **bugs** in the tool: [Issues](https://github.com/superredlark/gamiko-design/issues). Pull requests are welcome.
 - **Email:** support@tappole.com
@@ -54,6 +55,7 @@ Code under `tools/` is MIT. Documentation under `docs/` is CC BY 4.0. Works shar
 | [`docs/pdf-container.zh.md`](docs/pdf-container.zh.md) | 如何把剧本和图片整体打包进一个普通 PDF，以及所用的公开二进制格式 |
 | [`tools/gmkvn.py`](tools/gmkvn.py) | 公开版打包工具：故事 → PDF、PDF → 故事，并可生成单文件 HTML 预览。只依赖 Python 标准库 |
 | [`examples/lighthouse/`](examples/lighthouse/) | 《雨夜灯塔》：10 个场景、2 个结局的完整故事，含中英两版 |
+| [`works/`](works/) | 大家分享的作品 |
 
 ## 试一试
 
@@ -69,7 +71,7 @@ python3 tools/gmkvn.py unpack  lighthouse.pdf lighthouse_out
 
 ## 分享作品与参与讨论
 
-- **作品：** 在 [Discussions](https://github.com/superredlark/gamiko-design/discussions) 发布你的故事、剧本和美术作品，并写明别人可以怎样使用它们，见 [LICENSE](LICENSE)。
+- **作品：** 提交 Pull Request，把故事放进 `works/<你的 GitHub 用户名>/`，检查通过后会**自动合并**，见[投稿指南](works/README.md#chinese)。也可以直接在 [Discussions](https://github.com/superredlark/gamiko-design/discussions) 发布故事、剧本和美术作品。
 - **格式或工具的问题与想法：** [Discussions](https://github.com/superredlark/gamiko-design/discussions)。
 - **文档错误或工具 bug：** [Issues](https://github.com/superredlark/gamiko-design/issues)，欢迎提交 Pull Request。
 - **邮件：** support@tappole.com

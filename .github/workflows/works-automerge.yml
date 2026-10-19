@@ -1,0 +1,74 @@
+# Checks pull requests that submit works under works/<GitHub user name>/ and merges them automatically.
+#
+# Safety rules (keep them when editing this file):
+#   - pull_request_target runs THIS file and the scripts from the base branch, never the PR's versions.
+#   - The PR's commits are fetched as git objects and only read as data by the checker.
+#     Never check out the PR head, never run or import anything from it, never `pip install` from it.
+#   - Values that come from the PR (user name, title, branch name ...) reach shell commands only
+#     through env variables, never through ${{ }} inside a run: script.
+name: Works auto-merge
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: works-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  check-and-merge:
+    # maintainers' own pull requests are reviewed by hand
+    if: >-
+      github.event.pull_request.state == 'open' &&
+      !contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.pull_request.author_association)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the trusted base branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Fetch the pull request as data only
+        env:
+          PR: ${{ github.event.pull_request.number }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          git fetch --no-tags origin "+refs/pull/${PR}/head:refs/remotes/pr/head"
+          test "$(git rev-parse refs/remotes/pr/head)" = "$HEAD_SHA"
+
+      - name: Check the submission
+        id: check
+        env:
+          LOGIN: ${{ github.event.pull_request.user.login }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set +e
+          python3 .github/scripts/check_submission.py --login "$LOGIN" --base "$BASE_SHA" --head "$HEAD_SHA" --report "$RUNNER_TEMP/report.md"
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Explain what to fix
+        if: steps.check.outputs.code == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/report.md"
+          exit 1
+
+      - name: Merge
+        if: steps.check.outputs.code == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/report.md"
+          gh pr merge "$PR" --repo "$GITHUB_REPOSITORY" --squash --match-head-commit "$HEAD_SHA"

@@ -1,4 +1,7 @@
 __pycache__/
-*.preview.html
-*.pdf
 .DS_Store
+
+# outputs of the example commands in README / docs
+*.pdf
+*.preview.html
+*_out/
