@@ -92,7 +92,9 @@ Pictures for the Gamiko app are PNG. The app accepts packed files up to **16 MB*
 
 ## Languages
 
-Text fields can be a plain string or an object keyed by language. The language codes are the engine's own:
+A story can be written in any language: plain strings are shown as they are.
+
+One file can also carry several languages at once. Then a text field is an object keyed by language, and the app shows the one that matches the device. These keys are the engine's own codes:
 
 | Code | Language |
 |---|---|

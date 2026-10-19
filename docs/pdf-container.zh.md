@@ -91,7 +91,7 @@ value := tag:u8  payload
 | Page | 一页 A5，包含标题、说明和页脚 |
 | Filespec | `/F (story.gvnb)`，`/AFRelationship /Data` |
 | EmbeddedFile | `/Subtype /application#2Fx-gvjb`，`/Params << /Size … /CheckSum <md5> /ModDate … >>`。数据流就是 GVJB 数据，**不压缩**（图片本身已经是压缩过的） |
-| 字体 | 拉丁文字用 Helvetica（WinAnsi），中日文等其他文字用 **STSong-Light** + `UniGB-UCS2-H`。两者都是不嵌入的标准字体，所以文件很小。Acrobat 可能会提示下载亚洲语言字体包 |
+| 字体 | 拉丁文字用 Helvetica（WinAnsi），中日文等其他文字用 **STSong-Light** + `UniGB-UCS2-H`。两者都是不嵌入的标准字体，所以文件很小。Acrobat 可能会提示下载亚洲语言字体包。拉丁字母、中文、日文假名、西里尔字母以外的文字（韩文、阿拉伯文、泰文等）请用 `--font` |
 
 加 `--font some.ttf`（需要 Pillow）时，改用指定字体把这一页画成图片，官方文件就是这么做的。如果读者的 PDF 软件不支持中日文，请用这个选项。
 

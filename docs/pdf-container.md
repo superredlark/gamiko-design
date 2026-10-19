@@ -91,7 +91,7 @@ This is close to well-known formats such as CBOR or BSON. The point is only that
 | Page | One A5 page with the title, a description and a footer |
 | Filespec | `/F (story.gvnb)`, `/AFRelationship /Data` |
 | EmbeddedFile | `/Subtype /application#2Fx-gvjb`, `/Params << /Size … /CheckSum <md5> /ModDate … >>`. The stream is the GVJB data, **uncompressed** (the pictures are already compressed) |
-| Fonts | Helvetica (WinAnsi) for Latin text, and **STSong-Light** with `UniGB-UCS2-H` for CJK and other text. Both are standard fonts that are not embedded, so the file stays small. Acrobat may ask to download its Asian font pack |
+| Fonts | Helvetica (WinAnsi) for Latin text, and **STSong-Light** with `UniGB-UCS2-H` for CJK and other text. Both are standard fonts that are not embedded, so the file stays small. Acrobat may ask to download its Asian font pack. Scripts outside Latin, Chinese, Japanese kana and Cyrillic (Korean, Arabic, Thai ...) need `--font` |
 
 With `--font some.ttf` (needs Pillow), the page is drawn as a picture with that font instead. This is how the official files do it. Use it when the readers' PDF software lacks CJK support.
 

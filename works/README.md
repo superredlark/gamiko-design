@@ -18,12 +18,13 @@ Share your visual novels here. Submissions that pass the automatic check are **m
    ├── README.md              optional: a few words about yourself
    └── <work-name>/
        ├── README.md          recommended: a few words about the work, and its license if not CC BY 4.0
-       ├── story_en.json      one or more stories (scene JSON format)
-       ├── story_zh.json
+       ├── story.json         one or more stories (scene JSON format), any file names
        └── images/
            ├── 1.png
            └── 2.webp
    ```
+
+   Write in any language you like. One work can also hold several language versions, such as `story_en.json` and `story_ko.json`.
 
 3. Open a **pull request**. A bot checks it within a minute or two. If everything is fine, it merges the pull request. Otherwise it leaves a comment that says what to fix. Push the fix to the same branch and the check runs again.
 
@@ -53,7 +54,7 @@ Only submit work you created or are allowed to share. Your work stays yours. By 
 # <Title>
 
 - Author: <name or GitHub user name>
-- Languages: English, 中文
+- Language: <any>
 - Pictures: <drawn by me / made with an AI tool / ...>
 - License: CC BY 4.0 (or your own terms)
 
@@ -76,12 +77,13 @@ Only submit work you created or are allowed to share. Your work stays yours. By 
    ├── README.md              可选：介绍一下你自己
    └── <作品名>/
        ├── README.md          建议：介绍一下作品；授权不是 CC BY 4.0 时写在这里
-       ├── story_zh.json      一个或多个故事（场景 JSON 格式）
-       ├── story_en.json
+       ├── story.json         一个或多个故事（场景 JSON 格式），文件名随意
        └── images/
            ├── 1.png
            └── 2.webp
    ```
+
+   用什么语言写都可以。一个作品也可以放多个语言版本，比如 `story_zh.json` 和 `story_ko.json`。
 
 3. 提交 **Pull Request**。一两分钟内机器人会完成检查：全部合格就自动合并；有问题会留言说明要改什么。把修改推送到同一个分支，检查会自动重跑。
 
@@ -111,7 +113,7 @@ python3 tools/gmkvn.py preview works/<你>/<作品>/story_zh.json
 # <标题>
 
 - 作者：<名字或 GitHub 用户名>
-- 语言：中文、English
+- 语言：<任意>
 - 图片：<本人绘制 / 用 AI 工具生成 / ……>
 - 授权：CC BY 4.0（或你自己的条款）
 
