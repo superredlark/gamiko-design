@@ -1,0 +1,159 @@
+{
+  "title": "The Lighthouse in the Storm",
+  "serial": "6f0c8a52-3d41-4c8e-9b7a-1c2e3f4a5b02",
+  "scenes": {
+    "start": {
+      "steps": [
+        {
+          "background": "@b1",
+          "lines": [
+            "Rain lashes the kitchen window in gusts. Nell kneels on a chair, nose pressed to the cold glass. Father sailed out on the Petrel at dawn and promised to be back by evening, but it is pitch dark now and the sea shows nothing. The oil lamp flickers; overhead the great lamp hums as it turns, and that steadies her a little."
+          ]
+        }
+      ],
+      "next_scene": "2"
+    },
+    "2": {
+      "steps": [
+        {
+          "background": "@b2",
+          "lines": [
+            "Then a loud crash rings out above, and the humming stops. Nell runs to the door and looks up: the tower is dark. At that very moment, far out on the black sea, a red flare streaks into the sky. A boat is calling for help. Without the light, it will run straight onto the rocks."
+          ]
+        }
+      ],
+      "effect": "fade",
+      "choices": [
+        {
+          "title": "Climb to the lamp room and fix it yourself",
+          "next_scene": "3"
+        },
+        {
+          "title": "Run to the village for help",
+          "next_scene": "5"
+        }
+      ]
+    },
+    "3": {
+      "steps": [
+        {
+          "background": "@b3",
+          "lines": [
+            "Nell grabs the matches and climbs more than a hundred iron steps without stopping. Wind and rain pour into the lamp room: a pane has been smashed, rain has drowned the wick, and the brass lantern is dripping. She remembers Father's words: keep the wick dry and the wind out, and the flame will catch."
+          ]
+        }
+      ],
+      "effect": "fade",
+      "next_scene": "4"
+    },
+    "4": {
+      "steps": [
+        {
+          "background": "@b4",
+          "lines": [
+            "She pulls off her yellow raincoat and stuffs it into the broken pane, then dabs the wick dry with her scarf. The first match dies. So does the second. The third flares, the flame licks the wick, and with a soft roar the great lamp comes alive, its golden beam sweeping out over the sea again."
+          ]
+        }
+      ],
+      "effect": "fade",
+      "next_scene": "7"
+    },
+    "5": {
+      "steps": [
+        {
+          "background": "@b5",
+          "lines": [
+            "Nell runs out with a small lantern and takes the cliff path down to the village. The wind nearly knocks her over and the rain blinds her. Slipping and sliding, she reaches old Tom's door and pounds on it: \"The light is out! There's a boat at sea!\" One, two, three, the cottage windows light up."
+          ]
+        }
+      ],
+      "effect": "fade",
+      "next_scene": "6"
+    },
+    "6": {
+      "steps": [
+        {
+          "background": "@b6",
+          "lines": [
+            "Old Tom throws on his oilskins and leads a few fishermen up to the lighthouse with lanterns, Nell running ahead to show the way. They board up the broken window, old Tom dries the wick and strikes a match with a steady hand. When the great lamp blazes again, everyone cheers."
+          ]
+        }
+      ],
+      "effect": "fade",
+      "next_scene": "7"
+    },
+    "7": {
+      "steps": [
+        {
+          "background": "@b7",
+          "lines": [
+            "The beam sweeps round and round until it finds the boat: a small wooden boat tossed on the waves, a big tear in its red sail. Nell holds her breath. The patch on that red sail is one she sewed herself. It is the Petrel. It is Father's boat!"
+          ]
+        }
+      ],
+      "effect": "fade",
+      "next_scene": "8"
+    },
+    "8": {
+      "steps": [
+        {
+          "background": "@b8",
+          "lines": [
+            "But the Petrel's rudder seems broken. The waves are pushing it, little by little, toward the Black Teeth, the jagged rocks that jut out of the white foam. Nell grips the railing. There is no time to lose; she has to decide now."
+          ]
+        }
+      ],
+      "effect": "fade",
+      "choices": [
+        {
+          "title": "Turn the lens and light Father's way",
+          "next_scene": "9"
+        },
+        {
+          "title": "Fire the signal rocket and call the village",
+          "next_scene": "10"
+        }
+      ]
+    },
+    "9": {
+      "steps": [
+        {
+          "background": "@b9",
+          "lines": [
+            "Nell remembers what Father taught her: sweeping the light back and forth along the gap in the rocks tells a boat \"come this way\". She leans on the lens and shines the beam, again and again, on the safe channel. Slowly the Petrel turns and slides past the rocks. At dawn Father climbs ashore, soaked to the skin, and hugs her tight. \"That was you guiding me, wasn't it?\""
+          ]
+        }
+      ],
+      "effect": "fade",
+      "ending_name": {
+        "en": "Guided by the Light",
+        "es": "Guided by the Light",
+        "pt": "Guided by the Light",
+        "ru": "Guided by the Light",
+        "zh": "Guided by the Light",
+        "ja": "Guided by the Light",
+        "cn": "Guided by the Light"
+      }
+    },
+    "10": {
+      "steps": [
+        {
+          "background": "@b10",
+          "lines": [
+            "Nell lights the signal rocket kept in the tower. Red light bursts over the village, and soon the pier is full of people. A dozen small boats push out into the waves and tow the Petrel away from the rocks with ropes. As the sun rises, the whole village stands on the pier, and Father lifts Nell onto his shoulders. \"You kept Stonecove's light burning.\""
+          ]
+        }
+      ],
+      "effect": "fade",
+      "ending_name": {
+        "en": "The Whole Village",
+        "es": "The Whole Village",
+        "pt": "The Whole Village",
+        "ru": "The Whole Village",
+        "zh": "The Whole Village",
+        "ja": "The Whole Village",
+        "cn": "The Whole Village"
+      }
+    }
+  }
+}

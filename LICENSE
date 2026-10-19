@@ -1,46 +1,49 @@
-GAMIKO ASSETS & COLLABORATION LICENSE
-Version 1.0 | Effective Date: 2026-01-28
+This repository contains three kinds of material, each under its own terms.
 
-1. OWNERSHIP AND COPYRIGHT
-All creative assets (including but not limited to images, illustrations, 
-story scripts, dialogue, and audio files) uploaded to this repository 
-remain the exclusive property of the original contributor (the "Owner"). 
-In the case of a Pull Request (PR), the "Owner" refers to the individual 
-or entity who submitted the PR.
+1. CODE (everything under tools/)
+--------------------------------------------------------------------
 
-2. GRANT OF LICENSE TO GAMIKO
-By submitting content to this repository, the Owner irrevocably grants 
-the Gamiko platform a non-exclusive, worldwide, sublicensable license 
-(solely for the purpose of operating the platform) to use, display, 
-reproduce, and distribute the submitted assets in connection with the 
-Gamiko application and its official versions across all platforms 
-(iOS, Android, Web, etc.). This license is revenue-sharing eligible.
+MIT License
 
-3. SELECTION AND USAGE
-Gamiko reserves the unconditional right, at its sole discretion, to 
-decide whether to include, use, or continue using any submitted assets. 
-Submission of an asset does not create any obligation for Gamiko to 
-utilize the asset, nor does it guarantee inclusion in the live application.
+Copyright (c) 2026 superredlark
 
-4. REVENUE SHARING
-If an asset is selected and used within the Gamiko platform, the Owner 
-shall be eligible for potential revenue sharing. The specific sharing 
-amount will be automatically calculated by the system's internal 
-algorithm, with such algorithm subject to Gamiko’s sole discretion; 
-all distribution rules are subject to Gamiko's sole discretion and 
-may be adjusted and updated from time to time to ensure fairness 
-and adapt to the platform's growth.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-5. RESTRICTIONS ON THIRD PARTIES
-Except for the explicit license granted to Gamiko herein, no rights, 
-titles, or interests in or to the assets are granted to any third party. 
-Any unauthorized use, reproduction, modification, or commercial 
-exploitation of the assets in this repository by third parties is 
-strictly prohibited and protected under applicable international 
-copyright laws and treaties.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-6. NO OTHER WARRANTIES
-All assets are provided on an "as is" basis, without any warranties of 
-any kind, express or implied. Gamiko makes no guarantees regarding 
-the amount of revenue generated, the final performance of the assets, 
-or any other aspect of the assets’ use on the platform.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+2. DOCUMENTATION (everything under docs/, and the README files)
+--------------------------------------------------------------------
+
+Licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt the documentation for any purpose, as long as you
+give appropriate credit and indicate if changes were made.
+
+3. WORKS (stories, scripts, artwork and other creative content, including
+   everything under examples/ and anything shared through this repository)
+--------------------------------------------------------------------
+
+Each work belongs to its author. Publishing a work here does not by itself
+grant anyone any right to use it, beyond viewing it here and discussing it.
+If an author wants to allow more, they state their own license next to the
+work (for example in a README in the same folder, or in the post where the
+work is shared).
+
+The example story under examples/lighthouse/ may be used to try out, test
+and demonstrate the tools in this repository. Its pictures were generated
+with an AI tool and carry that tool's visible label.

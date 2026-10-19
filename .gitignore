@@ -1,0 +1,4 @@
+__pycache__/
+*.preview.html
+*.pdf
+.DS_Store
